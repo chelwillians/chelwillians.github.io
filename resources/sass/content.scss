@@ -1,0 +1,84 @@
+.all-content {
+	float: left;
+	position: relative;
+	height: 100%;
+	width: 100%;
+
+	.banner {
+		float: left;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		min-height: 100vh;
+
+		background: no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+
+		.mascara{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: url(../resources/images/pattern-photo.png) left top;
+			z-index: 50;
+		}
+
+		.infos{
+			position: absolute;
+			top: 50%;
+			width: 100%;
+			transform: translateY(-50%);
+			z-index: 100;
+			text-align: center;
+
+			h1{
+				color:#fff;
+				font-size: 40px;
+				font-weight: 500;
+				display: inline-block;
+				margin-bottom: 5px;
+				margin-top: 0;
+
+				span.l{
+					float:left;
+					position: relative;
+					margin-right: 25px;
+					opacity: 0;
+					transition: opacity .7s, left .7s;
+				}
+				span.r{
+					float: right;
+					position: relative;
+					margin-left: 25px;
+					opacity: 0;
+					transition: opacity .7s, right .7s;
+				}
+
+				span.active{
+					margin-left: 5px;
+					margin-right: 5px;
+					transition: .7s;
+					opacity: 1;
+				}
+			}
+			h3.desc{
+				position: relative;
+				color:#fff;
+				font-size: 25px;
+				font-weight: 400;
+				top: 15px;
+				opacity: 0;
+				transition: opacity .7s, top .7s;
+				
+				&.active{
+					opacity: 1;
+					top: 0;
+				}
+			}
+		}
+	}
+}

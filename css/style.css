@@ -400,6 +400,53 @@ template {
   position: relative;
   height: 100%;
   width: 100%; }
+  .all-content .arrow {
+    cursor: pointer;
+    z-index: 1;
+    opacity: 1;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform-origin: 50% 50%;
+    transform: translate3d(-50%, -50%, 0); }
+  .all-content .arrow-first {
+    animation: arrow-movement 2s ease-in-out infinite; }
+  .all-content .arrow-second {
+    animation: arrow-movement 2s 1s ease-in-out infinite; }
+  .all-content .arrow:before,
+  .all-content .arrow:after {
+    background: #fff;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px; }
+  .all-content .arrow:before {
+    transform: rotate(-45deg) translateX(-31%);
+    transform-origin: top left; }
+  .all-content .arrow:after {
+    transform: rotate(45deg) translateX(31%);
+    transform-origin: top right; }
+
+@keyframes arrow-movement {
+  0% {
+    opacity: 0;
+    bottom: 3%; }
+  70% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+  .all-content .menu {
+    position: absolute;
+    bottom: 15px;
+    bottom: 70px;
+    left: 50%;
+    color: #fff;
+    transform: rotate(-90deg) translateY(-65%); }
+    .all-content .menu ul {
+      list-style-type: none; }
   .all-content .banner {
     float: left;
     position: relative;
@@ -417,14 +464,12 @@ template {
       left: 0;
       width: 100%;
       height: 100%;
-      background: url(../resources/images/pattern-photo.png) left top;
-      z-index: 50; }
+      background: url(../resources/images/pattern-photo.png) left top; }
     .all-content .banner .infos {
       position: absolute;
       top: 50%;
       width: 100%;
       transform: translateY(-50%);
-      z-index: 100;
       text-align: center; }
       .all-content .banner .infos h1 {
         color: #fff;
@@ -438,17 +483,17 @@ template {
           position: relative;
           margin-right: 25px;
           opacity: 0;
-          transition: opacity .7s, left .7s; }
+          transition: opacity 0.7s, left 0.7s; }
         .all-content .banner .infos h1 span.r {
           float: right;
           position: relative;
           margin-left: 25px;
           opacity: 0;
-          transition: opacity .7s, right .7s; }
+          transition: opacity 0.7s, right 0.7s; }
         .all-content .banner .infos h1 span.active {
           margin-left: 5px;
           margin-right: 5px;
-          transition: .7s;
+          transition: 0.7s;
           opacity: 1; }
       .all-content .banner .infos h3.desc {
         position: relative;
@@ -457,7 +502,7 @@ template {
         font-weight: 400;
         top: 15px;
         opacity: 0;
-        transition: opacity .7s, top .7s; }
+        transition: opacity 0.7s, top 0.7s; }
         .all-content .banner .infos h3.desc.active {
           opacity: 1;
           top: 0; }

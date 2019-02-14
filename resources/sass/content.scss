@@ -4,6 +4,81 @@
 	height: 100%;
 	width: 100%;
 
+	// CSS das setas
+	$ani-speed: 2s;
+	$ani-delay: 1s;
+	
+	.area-arrow{}
+	.arrow {
+		cursor: pointer;
+		z-index: 1;
+		opacity: 1;
+		position: absolute;
+		left: 50%;
+		bottom: 5%;
+		transform-origin: 50% 50%;
+		transform: translate3d(-50%, -50%, 0);
+	}
+
+	.arrow-first {
+		animation: arrow-movement $ani-speed ease-in-out infinite;
+	}
+	.arrow-second {
+		animation: arrow-movement $ani-speed $ani-delay ease-in-out infinite;
+	}
+
+	.arrow:before,
+	.arrow:after {
+		background: #fff;
+		content: "";
+		display: block;
+		height: 2px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 15px;
+	}
+
+	.arrow:before {
+		transform: rotate(-45deg) translateX(-31%);
+		transform-origin: top left;
+	}
+
+	.arrow:after {
+		transform: rotate(45deg) translateX(31%);
+		transform-origin: top right;
+	}
+
+	// Animation
+	@keyframes arrow-movement {
+		0% {
+			opacity: 0;
+			bottom: 3%;
+		}
+		70% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+
+	//Fim animação
+
+	.menu {
+		position: absolute;
+		bottom: 15px;
+		bottom: 70px;
+		left: 50%;
+		color: #fff;
+		// z-index: 50;
+		transform: rotate(-90deg) translateY(-65%);
+
+		ul {
+			list-style-type: none;
+		}
+	}
+
 	.banner {
 		float: left;
 		position: relative;
@@ -17,64 +92,62 @@
 		-o-background-size: cover;
 		background-size: cover;
 
-		.mascara{
+		.mascara {
 			position: absolute;
 			top: 0;
 			left: 0;
 			width: 100%;
 			height: 100%;
 			background: url(../resources/images/pattern-photo.png) left top;
-			z-index: 50;
 		}
 
-		.infos{
+		.infos {
 			position: absolute;
 			top: 50%;
 			width: 100%;
 			transform: translateY(-50%);
-			z-index: 100;
 			text-align: center;
 
-			h1{
-				color:#fff;
+			h1 {
+				color: #fff;
 				font-size: 40px;
 				font-weight: 500;
 				display: inline-block;
 				margin-bottom: 5px;
 				margin-top: 0;
 
-				span.l{
-					float:left;
+				span.l {
+					float: left;
 					position: relative;
 					margin-right: 25px;
 					opacity: 0;
-					transition: opacity .7s, left .7s;
+					transition: opacity 0.7s, left 0.7s;
 				}
-				span.r{
+				span.r {
 					float: right;
 					position: relative;
 					margin-left: 25px;
 					opacity: 0;
-					transition: opacity .7s, right .7s;
+					transition: opacity 0.7s, right 0.7s;
 				}
 
-				span.active{
+				span.active {
 					margin-left: 5px;
 					margin-right: 5px;
-					transition: .7s;
+					transition: 0.7s;
 					opacity: 1;
 				}
 			}
-			h3.desc{
+			h3.desc {
 				position: relative;
-				color:#fff;
+				color: #fff;
 				font-size: 25px;
 				font-weight: 400;
 				top: 15px;
 				opacity: 0;
-				transition: opacity .7s, top .7s;
-				
-				&.active{
+				transition: opacity 0.7s, top 0.7s;
+
+				&.active {
 					opacity: 1;
 					top: 0;
 				}

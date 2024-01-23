@@ -7,21 +7,22 @@
 	// CSS das setas
 	$ani-speed: 2s;
 	$ani-delay: 1s;
-	
-	.area-arrow{
+
+	.area-arrow {
 		position: absolute;
 		left: 50%;
 		bottom: 5%;
-		transform: translateX(-50%); 
+		transform: translateX(-50%);
 		z-index: 1;
 		width: 30px;
 		height: 30px;
 		cursor: pointer;
 		display: none;
 	}
+
 	.arrow {
 		position: absolute;
-		width: 15px; 
+		width: 15px;
 		z-index: 1;
 		opacity: 0;
 		left: 50%;
@@ -33,6 +34,7 @@
 	.arrow-first {
 		animation: arrow-movement $ani-speed ease-in-out infinite;
 	}
+
 	.arrow-second {
 		animation: arrow-movement $ani-speed $ani-delay ease-in-out infinite;
 	}
@@ -65,9 +67,11 @@
 			opacity: 0;
 			bottom: 5px;
 		}
+
 		70% {
 			opacity: 1;
 		}
+
 		100% {
 			opacity: 0;
 		}
@@ -111,57 +115,60 @@
 			background: url(../resources/images/pattern-photo.png) left top;
 		}
 
-		.infos {
-			position: absolute;
-			top: 50%;
-			width: 100%;
-			transform: translateY(-50%);
-			text-align: center;
+		&__title {
+			color: #fff;
+			font-size: 40px;
+			font-weight: 500;
+			display: inline-block;
+			margin-bottom: 5px;
+			margin-top: 0;
 
-			h1 {
-				color: #fff;
-				font-size: 40px;
-				font-weight: 500;
-				display: inline-block;
-				margin-bottom: 5px;
-				margin-top: 0;
-
-				span.l {
-					float: left;
-					position: relative;
-					margin-right: 25px;
-					opacity: 0;
-					transition: opacity 0.7s, left 0.7s;
-				}
-				span.r {
-					float: right;
-					position: relative;
-					margin-left: 25px;
-					opacity: 0;
-					transition: opacity 0.7s, right 0.7s;
-				}
-
-				span.active {
-					margin-left: 5px;
-					margin-right: 5px;
-					transition: 0.7s;
-					opacity: 1;
-				}
-			}
-			h3.desc {
+			span.l {
+				float: left;
 				position: relative;
-				color: #fff;
-				font-size: 25px;
-				font-weight: 400;
-				top: 15px;
+				margin-right: 25px;
 				opacity: 0;
-				transition: opacity 0.7s, top 0.7s;
+				transition: opacity 0.7s, left 0.7s;
+			}
 
-				&.active {
-					opacity: 1;
-					top: 0;
-				}
+			span.r {
+				float: right;
+				position: relative;
+				margin-left: 25px;
+				opacity: 0;
+				transition: opacity 0.7s, right 0.7s;
+			}
+
+			span.active {
+				margin-left: 5px;
+				margin-right: 5px;
+				transition: 0.7s;
+				opacity: 1;
 			}
 		}
+
+		&__subtitle {
+			position: relative;
+			color: #fff;
+			font-size: 25px;
+			font-weight: 400;
+			top: 15px;
+			opacity: 0;
+			transition: opacity 0.7s, top 0.7s;
+
+			&.active {
+				opacity: 1;
+				top: 0;
+			}
+		}
+	}
+
+	.infos {
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		transform: translateY(-50%);
+		text-align: center;
+
 	}
 }

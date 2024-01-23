@@ -161,6 +161,23 @@
 				top: 0;
 			}
 		}
+
+		&__social {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			margin-top: 14px;
+
+			&-item {
+				padding: 0 5px;
+				list-style: none;
+			}
+
+			a {
+				color: #fff;
+				font-weight: 500;
+			}
+		}
 	}
 
 	.infos {
@@ -170,5 +187,23 @@
 		transform: translateY(-50%);
 		text-align: center;
 
+	}
+}
+
+.under-development {
+	position: absolute;
+	bottom: 12px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	svg {
+		width: 32px;
+		height: 32px;
+		margin-left: 4px;
 	}
 }

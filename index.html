@@ -1,125 +1,98 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description"
-		content="Desenvolvedor Web Full Stack com mais de 7 anos de experiência. Especializado em HTML, CSS, JavaScript, PHP, Wordpress, SASS, Gulp, GIT, etc.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Desenvolvedor Web Full Stack com mais de 7 anos de experiência. Especializado em HTML, CSS, JavaScript, PHP, Wordpress, SASS, Gulp, GIT, etc.">
 
-	<!-- Metatags para SEO -->
-	<meta name="keywords"
-		content="Desenvolvedor Web, Full Stack, HTML, CSS, JavaScript, PHP, Wordpress, SASS, Gulp, GIT">
-	<meta name="author" content="Michel Willians">
-	<meta name="robots" content="index, follow">
+    <!-- Metatags para SEO -->
+    <meta name="keywords"
+        content="Desenvolvedor Web, Full Stack, HTML, CSS, JavaScript, PHP, Wordpress, SASS, Gulp, GIT">
+    <meta name="author" content="Michel Willians">
+    <meta name="robots" content="index, follow">
 
-	<!-- Metatags para Redes Sociais -->
-	<meta property="og:title" content="Michel Willians - Desenvolvedor Web Full Stack">
-	<meta property="og:description"
-		content="Desenvolvedor Web Full Stack com mais de 7 anos de experiência. Especializado em HTML, CSS, JavaScript, PHP, Wordpress, SASS, Gulp, GIT, etc.">
-	<!-- <meta property="og:image" content="URL_DA_SUA_IMAGEM">
+    <!-- Metatags para Redes Sociais -->
+    <meta property="og:title" content="Michel Willians - Desenvolvedor Web Full Stack">
+    <meta property="og:description"
+        content="Desenvolvedor Web Full Stack com mais de 7 anos de experiência. Especializado em HTML, CSS, JavaScript, PHP, Wordpress, SASS, Gulp, GIT, etc.">
+    <!-- <meta property="og:image" content="URL_DA_SUA_IMAGEM">
 	<meta property="og:url" content="URL_DO_SEU_PORTFOLIO"> -->
-	<meta property="og:type" content="website">
+    <meta property="og:type" content="website">
 
-	<!-- Metatags Twitter Card -->
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Michel Willians - Desenvolvedor Web Full Stack">
-	<meta name="twitter:description"
-		content="Desenvolvedor Web Full Stack com mais de 7 anos de experiência. Especializado em HTML, CSS, JavaScript, PHP, Wordpress, SASS, Gulp, GIT, etc.">
-	<!-- <meta name="twitter:image" content="URL_DA_SUA_IMAGEM">
+    <!-- Metatags Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Michel Willians - Desenvolvedor Web Full Stack">
+    <meta name="twitter:description"
+        content="Desenvolvedor Web Full Stack com mais de 7 anos de experiência. Especializado em HTML, CSS, JavaScript, PHP, Wordpress, SASS, Gulp, GIT, etc.">
+    <!-- <meta name="twitter:image" content="URL_DA_SUA_IMAGEM">
 	<meta name="twitter:url" content="URL_DO_SEU_PORTFOLIO"> -->
 
-	<!-- Favicon -->
-	<!-- <link rel="icon" href="CAMINHO_PARA_O_SEU_FAVICON" type="image/x-icon"> -->
+    <!-- Favicon -->
+    <!-- <link rel="icon" href="CAMINHO_PARA_O_SEU_FAVICON" type="image/x-icon"> -->
 
-	<!-- Título da Página -->
-	<title>Michel Willians - Desenvolvedor Web Full Stack</title>
+    <!-- Título da Página -->
+    <title>Michel Willians - Desenvolvedor Web Full Stack</title>
 
-	<link rel="stylesheet" href="./css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap" rel="stylesheet">
 
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-M12EHXWRJC"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
+    <link rel="stylesheet" href="./dist/css/style.min.css">
 
-		gtag('config', 'G-M12EHXWRJC');
-	</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M12EHXWRJC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-M12EHXWRJC');
+    </script>
 </head>
 
 <body>
+    <header class="main-header">
+        <div class="container">
+            <div class="main-header__wrap">
+                <a href="#" class="main-header__title">Michel Willians</a>
+                <div class="main-header__hamburguer">
+                    <span class="main-header__hamburguer--item"></span>
+                    <span class="main-header__hamburguer--item"></span>
+                    <span class="main-header__hamburguer--item"></span>
+                </div>
+            </div>
+        </div>
+    </header>
 
-	<div class="all-content">
-		<div class="menu">
-			<ul>
-				<li>Sobre</li>
-				<li>Experiências</li>
-				<li>Contato</li>
-			</ul>
-		</div>
+    <div class="main-banner">
+        <div class="container wrap">
+            <div class="main-banner__image-area">
+                <img src="./dist/img/eu.jpg" alt="Uma foto minha sorrindo com uma arvore de fundo desfocada" class="main-banner__image">
+            </div>
+            <div class="main-banner__info">
+                <h1 class="main-banner__info--title">Sou o Michel Willians 🥷🏻</h1>
+                <h2 class="main-banner__info--subtitle">Desenvolvedor Web Full Stack</h2>
+                <div class="main-banner__info--desc-area">
+                    <p>Formado em Análise e Desenvolvimento de Sistemas, atualmente trabalho como Desenvolvedor Full Stack em uma agência de Marketing Digital.</p>
+                </div>
+                <ul class="main-banner__info--tags">
+                    <li class="main-banner__info--tags-item main-banner__info--tags-item--wp">Wordpress</li>
+                    <li class="main-banner__info--tags-item main-banner__info--tags-item--vtex">Vtex</li>
+                    <li class="main-banner__info--tags-item main-banner__info--tags-item--css">CSS</li>
+                    <li class="main-banner__info--tags-item main-banner__info--tags-item--html">HTML</li>
+                    <li class="main-banner__info--tags-item main-banner__info--tags-item--php">PHP</li>
+                    <li class="main-banner__info--tags-item main-banner__info--tags-item--js">JavaScript</li>
+                    <li class="main-banner__info--tags-item main-banner__info--tags-item--git">Git</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-		<div class="area-arrow">
-			<div class="arrow arrow-first"></div>
-			<div class="arrow arrow-second"></div>
-		</div>
-
-		<div class="banner" style="background-image: url(./resources/images/banner2.jpg);">
-			<div class="mascara"></div>
-			<div class="infos">
-				<h1 class="banner__title"><span class="l">Michel</span><span class="r"> Willians</span></h1>
-				<h2 class="banner__subtitle">Desenvolvedor Web</h2>
-
-				<ul class="banner__social">
-					<li class="banner__social-item"><a target="_blank"
-							href="https://www.linkedin.com/in/michel-willians/">LinkedIn</a></li>
-					<li class="banner__social-item"><a target="_blank" href="https://github.com/chelwillians">Github</a></li>
-					<li class="banner__social-item"><a target="_blank" href="mailto:michel.willians@outlook.com">Meu e-mail</a></li>
-					<li class="banner__social-item"><a target="_blank" href="https://api.whatsapp.com/send?phone=5511979563105">Whatsapp</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-
-	<div class="under-development">
-		Site em construção
-		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512"
-			height="512" x="0" y="0" viewBox="0 0 60 60" style="enable-background:new 0 0 512 512" xml:space="preserve"
-			class="">
-			<g>
-				<path fill="#e8ce31"
-					d="M22 26v-5.22a10 10 0 0 1 6.93-9.52l20.23-6.53.86 4.29-18.19 7.7A3 3 0 0 0 30 19.49V26z"
-					opacity="1" data-original="#e8ce31" class=""></path>
-				<path fill="#dbba2e" d="M9 46h22v6H9zM35 40v1H20V26a2.006 2.006 0 0 1 2-2h3l9.38 11z" opacity="1"
-					data-original="#dbba2e"></path>
-				<path fill="#e8ce31"
-					d="M35 47H4a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2h16l2.25 4.5a2.713 2.713 0 0 0 2.426 1.5H35a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2z"
-					opacity="1" data-original="#e8ce31" class=""></path>
-				<rect width="38" height="8" x="1" y="51" fill="#2c4e59" rx="4" opacity="1" data-original="#2c4e59">
-				</rect>
-				<path fill="#4078bc" d="M34.38 35H27a2.006 2.006 0 0 1-2-2v-9h6.23a2.007 2.007 0 0 1 1.99 1.75z"
-					opacity="1" data-original="#4078bc"></path>
-				<path fill="#e8ce31" d="M56.99 10.01a20.435 20.435 0 0 1-.05 2.07l-1.61 26.78L51 39V10z" opacity="1"
-					data-original="#e8ce31" class=""></path>
-				<circle cx="54" cy="6" r="5" fill="#dbba2e" opacity="1" data-original="#dbba2e"></circle>
-				<path fill="#2c4e59"
-					d="M57 43a6.069 6.069 0 0 1-6 6h-3.15a1.819 1.819 0 0 1-1.81-1.38 1.748 1.748 0 0 1 1.15-2.02L49 45v-7a1 1 0 0 1 1-1h1a6 6 0 0 1 6 6z"
-					opacity="1" data-original="#2c4e59"></path>
-				<path fill="#dbba2e"
-					d="M7 42a1 1 0 0 1-1-1v-3a1 1 0 0 1 2 0v3a1 1 0 0 1-1 1zM11 42a1 1 0 0 1-1-1v-3a1 1 0 0 1 2 0v3a1 1 0 0 1-1 1zM15 42a1 1 0 0 1-1-1v-3a1 1 0 0 1 2 0v3a1 1 0 0 1-1 1z"
-					opacity="1" data-original="#dbba2e"></path>
-				<g fill="#d7e9fd">
-					<path
-						d="M9 56H7a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2zM17 56h-2a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2zM25 56h-2a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2zM33 56h-2a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2z"
-						fill="#d7e9fd" opacity="1" data-original="#d7e9fd"></path>
-				</g>
-			</g>
-		</svg>
-	</div>
-
-	<script src="./js/all.min.js"></script>
+    <script src="./dist/js/main.min.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,125 @@
+.main-banner {
+    height: 100vh;
+
+    .wrap {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__image-area {
+        display: none;
+
+        @media(min-width: 768px) {
+            display: block;
+            width: 380px;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    &__info {
+        text-align: center;
+
+        @media(min-width: 768px) {
+            width: 50%;
+            text-align: left;
+            margin-left: 32px;
+        }
+
+        &--title {
+            font-size: 38px;
+            font-weight: 700;
+        }
+
+        &--subtitle {
+            margin-top: 8px;
+            font-size: 18px;
+        }
+
+        &--desc-area {
+            margin-top: 8px;
+
+            p {
+                line-height: 1.2;
+            }
+        }
+
+        &--tags {
+            margin-top: 32px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            @media(min-width: 768px) {
+                justify-content: flex-start;
+            }
+
+            &-item {
+                $item: &;
+                display: inline-block;
+                padding: 4px 6px;
+                border-radius: 4px;
+                background-color: #ecf0f1;
+                border: 1px solid #bdc3c7;
+                margin-right: 4px;
+                margin-top: 4px;
+                transition: .7s;
+                cursor: pointer;
+
+                &--wp {
+                    &:hover {
+                        background-color: #00a0d2;
+                        color: #fff;
+                    }
+                }
+
+                &--vtex {
+                    &:hover {
+                        background-color: #E31C58;
+                        color: #fff;
+                    }
+                }
+
+                &--css {
+                    &:hover {
+                        background-color: #214ce5;
+                        color: #fff;
+                    }
+                }
+
+                &--html {
+                    &:hover {
+                        background-color: #e44d26;
+                        color: #fff;
+                    }
+                }
+
+                &--php {
+                    &:hover {
+                        background-color: #4f5b93;
+                        color: #fff;
+                    }
+                }
+
+                &--js {
+                    &:hover {
+                        background-color: #f7e018;
+                    }
+                }
+
+                &--git {
+                    &:hover {
+                        background-color: #f14e32;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

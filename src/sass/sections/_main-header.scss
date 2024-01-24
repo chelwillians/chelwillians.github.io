@@ -13,7 +13,7 @@
         position: absolute;
         left: 0;
         top: 0;
-        border: 1px solid #ecf0f1;
+        border: 1px solid #cbcbcb;
         width: 100%;
         padding: 16px;
         border-radius: 16px;
@@ -31,6 +31,10 @@
         text-decoration: none;
         color: #000;
         font-weight: 600;
+    }
+
+    &__dev{
+        font-weight: 700;
     }
 
     &__hamburguer {

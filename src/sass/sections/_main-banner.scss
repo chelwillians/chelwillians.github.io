@@ -128,29 +128,33 @@
             }
         }
 
-        &--label{
+        &--label {
             margin-top: 12px;
             font-weight: 12px;
             font-weight: 600;
             display: block;
         }
 
-        &--links{
+        &--links {
             width: 100%;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             margin-top: 6px;
 
-            &-item{
+            @media(min-width: 768px) {
+                justify-content: flex-start;
+            }
+
+            &-item {
                 margin-right: 6px;
             }
 
-            a{
+            a {
                 color: #000;
                 transition: .7s;
 
-                &:hover{
+                &:hover {
                     color: #808080;
                 }
             }

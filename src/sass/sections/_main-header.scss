@@ -37,6 +37,14 @@
         font-weight: 700;
     }
 
+    &__menu{
+        a{
+            color: #000;
+            text-decoration: none;
+            font-weight: 500;
+        }
+    }
+
     &__hamburguer {
         $hamburguer: &;
         width: 25px;

@@ -1,0 +1,11 @@
+.header-section{
+    &__title{
+        font-size: 32px;
+        font-weight: 600;
+
+        &--center{
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+.xp {
+    padding-bottom: 64px;
+
+    &--single {
+        padding: 128px 0;
+    }
+
+    .wrap {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    &__list {
+        margin-top: 32px;
+    }
+
+    &__item {
+        margin-bottom: 24px;
+
+        &--title {
+            font-size: 26px;
+            line-height: 1.3;
+            font-weight: 600;
+        }
+
+        &--company {
+            display: inline-block;
+            margin-top: 4px;
+            font-weight: 500;
+
+            &::after {
+                content: "|";
+                margin: 0 5px;
+                font-weight: 400;
+            }
+        }
+
+        &--desc {
+            margin-top: 12px;
+
+            ul {
+                list-style: disc;
+                list-style-position: inside;
+
+                li {
+                    line-height: 1.5;
+
+                    &::marker {
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+            p {
+                line-height: 1.5;
+            }
+        }
+    }
+}
